@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    /* background-color: rgb(59, 59, 247); */
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    background-color: rgb(216, 182, 97);
+    z-index: -1;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10%  auto;
+    height: 10vh;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.hero{
+    height: 60%;
+    position: relative;
+}
+
+section .hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .headline{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-20%, -40%);
+    -webkit-transform: translate(-20%, -40%);
+    -moz-transform: translate(-20%, -40%);
+    -ms-transform: translate(-20%, -40%);
+    -o-transform: translate(-20%, -40%);
+    z-index: 20;
+    color: white;
+}
+
+
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+.animaMate{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
